@@ -36,4 +36,10 @@ public class Contact {
     public void setPhone(String phone) {
         this.phone = phone;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("Id: " + id +  "\tName: " + name + "\tPhone: " + phone );
+        return sb.toString();
+    }
 }
